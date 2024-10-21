@@ -126,3 +126,19 @@ main form input[type="submit"]{
 main form input[type="submit"]:hover{
     background: #5d57af;
 }
+
+section .imagem{
+    width: 100%;
+}
+
+/*criar o circulo*/
+section.imagem .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #feb4ff, #ccc0ff);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}
