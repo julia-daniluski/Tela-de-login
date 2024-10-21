@@ -33,3 +33,96 @@ main h1 {
     margin-bottom: 3rem;
     text-align: center;
 }
+
+/*ajustando os logos das redes sociais*/
+main .sociais img {
+    width: 36px;
+    margin-left: 3rem;
+}
+main .sociais a{
+    text-decoration: none;
+}
+
+main .sociais{
+    display: flex;
+    align-content: center;
+}
+
+main .sociais a:first-child img {
+    margin-left: 0;
+}
+
+/*editando OU*/
+
+main .alternative{
+    margin-top: 1rem;
+}
+
+main .alternative span{
+    color: #999999;
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+}
+
+main .alternative span::before,
+main .alternative span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background-color: #999999;
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+/*estilizando o formulário*/
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input{
+    background-color: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: #999999;
+    font-size: 1rem;
+    border: 1px solid #161923;
+    border-radius: 8px;
+}
+
+/* Estilizando o botão */
+main form input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #8880fe;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+    background: #5d57af;
+}
